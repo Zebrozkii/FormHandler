@@ -1,13 +1,14 @@
 <?php
 
 if(isset($_GET['FirstName'])){// show data
-echo $_GET['FirstName'];
+echo $_GET['FirstName'] . ' ' .$_GET['LastName'];
 
   }else{//show form
   echo '
   <form action="">
-  First Name: <input type="text" name ="FirstName" /> <br />
-  <input type="submit" />
+    First Name: <input type="text" name ="FirstName" /> <br />
+    Last Name: <input type="text" name ="LAstName" /> <br />
+    <input type="submit" />
   </form>
   
   ';
